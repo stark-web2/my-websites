@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website - Crystal Bangalisan </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .hero {
+            margin-top: 60px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        main {
+            margin-top: 0;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            scroll-margin-top: 70px;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        section p, section ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .hobby-img {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .hobby-img img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .experience-img {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+
+        .experience-img img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                padding: 10px;
+                width: 100%;
+                text-align: center;
+            }
+
+            section {
+                padding: 15px;
+            }
+
+            .hero {
+                padding: 40px 20px;
+            }
+
+            .hero .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .hobby-img img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .experience-img img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="my profile.png " alt="profile" class="profile-img" />
+        <h1>Hi, I'm Crystal Bangalisan</h1>
+        <p>3rd Year Bachelor of science in computer science. Explore my background, experiences, and interests below.</p>
+    </div>
+
+    <main>
+        <section id="education">
+            <h2>Education</h2>
+            <img src="Debesmscat.jpg" alt="Debesmscat University campus" style="width:760px; height:auto;" />
+            <p>I take my Bachelor's degree in Computer Science from DEBEMSCAT Masbate, where I focused on software development and algorithms. Prior to that, I attended Luy-a National High School.</p>
+            <ul>
+                <li>Bachelor of Science in Computer Science - 2023-present</li>
+                <li>High School Diploma in luy-a, aroroy,masbete 2021-2022</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-img">
+                <img src="bread and pastry nc II passer.jpg " alt="bread and pastry" />
+                <img src="digitalart.jpg" alt="my art" />
+                <img src="scavenger hunt.jpg" alt="scavenger hunt" />
+                <img src="projects.jpg" alt="projects" />
+               
+            </div>
+            </div>
+            <p>3rd year computer science student have some knowledge about python, c++, and c.</p>
+            <ul>
+                <li>I'm  NC II passer in bread and pastry.</li>
+                <li>I have some small experience about graphic design and still do explore as i love making art</li>
+                <li>I also joined a scavenger hunt at my school. It was fun and filled with so much laughter. I didn’t even know my groupmates, 
+                    but we just enjoyed the game without knowing each other’s names. Even when it was raining, we kept going to our next challenge.</li>
+                <li>A C++ calculator capable of performing basic arithmetic while handling user input errors.</li>
+                <li>A C-based student record system that stores and retrieves data using file handling.</li>
+                <li>A Number Guessing Game random number generator with hints and attempt counter.</li>
+
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <img src=" " class="profile-img" />
+            <p>Hi! I'm a passionate web developer with a love for creating user-friendly and visually appealing websites. I enjoy learning new technologies and solving complex problems.</p>
+            <p>My skills include HTML and CSS. When not coding, I love hiking and and exploring.</p>
+            <p>My strengths are problem solving,debugging, adaptability</p>
+            <p>I have small coding projects like</p>
+            <p>A C++ calculator capable of performing basic arithmetic while handling user input errors</p>
+            <p>A C-based student record system that stores and retrieves data using file handling</p>
+            <p>A Number Guessing Game random number generator with hints and attempt counter.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>Besides work, I have several hobbies that keep me engaged and happy.</p>
+            <div class="hobby-img">
+                <img src="digitalart.jpg" alt="my art" />
+                <img src="photography.jpg" alt="pictures" />
+                <img src="painting.jpg" alt="my art" />
+                <img src="hiking - Copy.jpg" alt="travel" />
+               
+            </div>
+            <ul>
+                <li>I do digital art when i feel like i do</li>
+                <li>Experimenting with photography taking photos of sunset</li>
+                <li>I do some paintings</li>
+                <li>I also like hiking. We walked for 1 hour to reach the Mayong Payong Mountain peak,
+                    and another 1 hour walk to get to the falls. But it was all worth it, because when you reach the falls,
+                    you can refresh yourself by bathing there.</li>
+            </ul>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me for collaborations or just to say hello!</p>
+    <ul>
+        <li>Email: <a href="mailto:https://mail.google.com/mail/u/0/?hl=en#inbox">crystalbangalisan64@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.google.com/search?q=bangalisan&sourceid=chrome&ie=UTF-8" target="_blank">linkedin.com/in/yourprofile</a></li>
+        <li>Phone: <a href="tel:09854151139">09854151139</a></li>
+        <li>Instagram: <a href="https://www.instagram.com/talwws_04/" target="tawls_04">instagram.com/talws_04</a></li>
+    </ul>
+</section>
+    </main>
+
+    <footer>
+        <p>@ 2025Personal Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+ 
